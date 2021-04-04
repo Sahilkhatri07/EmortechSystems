@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  background-image: url("/styles/images/backdrop.png");
+  background-image: url("/backdrop.png");
 }
 
 body {
