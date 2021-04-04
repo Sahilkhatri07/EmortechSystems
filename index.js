@@ -9,10 +9,10 @@ function checkFunc() {
     alertText.innerHTML = "Password can't be empty!";
   } else if (firstPassword.length < 8 || secondPassword.length < 8) {
     alertText.innerHTML = "Password length less than 8!";
-  } else if (firstPassword !== secondPassword) {
-    alertText.innerHTML = "Passwords do not match!";
   } else if (/[^a-zA-Z]/.test(firstPassword)) {
     alertText.innerHTML = "Please enter only alphabets!";
+  } else if (firstPassword !== secondPassword) {
+    alertText.innerHTML = "Passwords do not match!";
   } else {
     var mainHeading = document.getElementById("main-heading");
     mainHeading.innerHTML = "Password Changed";
@@ -21,9 +21,14 @@ function checkFunc() {
     var textMessage = document.getElementById("text-message");
     textMessage.innerHTML =
       "Your password has been updated! Now get back in the driver seat, racers are waiting for you!";
-    var headingText = document.getElementById("heading-text");
-    headingText.style.visibility = "hidden";
-    firstPassword.style.visibility = "hidden";
-    secondPassword.style.visibility = "hidden";
+
+    var firstPasswordDi = document.getElementById("firstPassword");
+    var secondPasswordDi = document.getElementById("secondPassword");
+    var textHeading = document.querySelectorAll("#text-heading");
+    firstPasswordDi.style.display = "none";
+    secondPasswordDi.style.display = "none";
+    textHeading[0].style.display = "none";
+    textHeading[1].style.display = "none";
+    textHeading[2].style.display = "none";
   }
 }
