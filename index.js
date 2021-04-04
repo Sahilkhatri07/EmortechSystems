@@ -2,6 +2,9 @@ $("#formId").submit(function (event) {
   event.preventDefault();
 });
 function checkFunc() {
+  setTimeout(function () {
+    window.location.reload();
+  }, 2000);
   var firstPassword = document.getElementById("firstPassword").value;
   var secondPassword = document.getElementById("secondPassword").value;
   var alertText = document.getElementById("text-alert");
@@ -30,5 +33,7 @@ function checkFunc() {
     textHeading[0].style.display = "none";
     textHeading[1].style.display = "none";
     textHeading[2].style.display = "none";
+    var buttonChange = document.getElementById("buttonChange");
+    buttonChange.style.marginTop = "2rem";
   }
 }

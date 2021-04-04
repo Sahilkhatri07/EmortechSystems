@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  background-image: url("/styles/images/backdrop.png");
 }
 
 body {
@@ -52,17 +53,17 @@ body {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
-  .footer-text{
+  .footer-text {
     margin: 0.1rem 0;
   }
 }
 
-.footer-text{
+.footer-text {
   color: #fff;
   font-size: large;
   margin: 1rem 0.5rem;
 }
 
-.text-alert{
+.text-alert {
   color: red;
 }
