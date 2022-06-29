@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-  background-image: url("https://yatharth28.github.io/EmortechSystems/backdrop.jpg");
 }
 
 body {
@@ -13,33 +12,6 @@ body {
   background-color: #f5f5f5;
 }
 
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
-  margin-top: 10%;
-}
-
-.form-signin .checkbox {
-  font-weight: 400;
-}
-
-.form-signin .form-floating:focus-within {
-  z-index: 2;
-}
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -53,12 +25,12 @@ body {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
-  .footer-text {
+  .text-ft {
     margin: 0.1rem 0;
   }
 }
 
-.footer-text {
+.text-ft {
   color: #fff;
   font-size: large;
   margin: 1rem 0.5rem;
@@ -66,4 +38,33 @@ body {
 
 .text-alert {
   color: red;
+}
+
+.sign-in-here .checkbox {
+  font-weight: 400;
+}
+
+.sign-in-here .form-floating:focus-within {
+  z-index: 2;
+}
+
+.sign-in-here {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+
+.sign-in-here input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.sign-in-here input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }

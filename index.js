@@ -1,35 +1,35 @@
 $("#formId").submit(function (event) {
   event.preventDefault();
 });
-function checkFunc() {
+function mainoneFunc() {
   setTimeout(function () {
     window.location.reload();
   }, 2000);
-  var firstPassword = document.getElementById("firstPassword").value;
-  var secondPassword = document.getElementById("secondPassword").value;
-  var alertText = document.getElementById("text-alert");
-  if (firstPassword === "" || secondPassword === "") {
-    alertText.innerHTML = "Password can't be empty!";
-  } else if (firstPassword.length < 8 || secondPassword.length < 8) {
-    alertText.innerHTML = "Password length less than 8!";
-  } else if (/[^a-zA-Z]/.test(firstPassword)) {
-    alertText.innerHTML = "Please enter only alphabets!";
-  } else if (firstPassword !== secondPassword) {
-    alertText.innerHTML = "Passwords do not match!";
+  var passwordone = document.getElementById("passwordone").value;
+  var passwordtwo = document.getElementById("passwordtwo").value;
+  var textalert = document.getElementById("text-alert");
+  if (passwordone === "" || passwordtwo === "") {
+    textalert.innerHTML = "Password can't be empty!";
+  } else if (passwordone.length < 8 || passwordtwo.length < 8) {
+    textalert.innerHTML = "Password length less than 8!";
+  } else if (/[^a-zA-Z]/.test(passwordone)) {
+    textalert.innerHTML = "Please enter only alphabets!";
+  } else if (passwordone !== passwordtwo) {
+    textalert.innerHTML = "Passwords do not match!";
   } else {
-    var mainHeading = document.getElementById("main-heading");
-    mainHeading.innerHTML = "Password Changed";
-    var buttonText = document.getElementById("button-text");
-    buttonText.innerHTML = "JOIN A RACE";
+    var mainhead = document.getElementById("main-heading");
+    mainhead.innerHTML = "Password Changed";
+    var btnonetext = document.getElementById("button-text");
+    btnonetext.innerHTML = "JOIN A RACE";
     var textMessage = document.getElementById("text-message");
     textMessage.innerHTML =
       "Your password has been updated! Now get back in the driver seat, racers are waiting for you!";
 
-    var firstPasswordDi = document.getElementById("firstPassword");
-    var secondPasswordDi = document.getElementById("secondPassword");
+    var onepassword = document.getElementById("passwordone");
+    var twopassword = document.getElementById("passwordtwo");
     var textHeading = document.querySelectorAll("#text-heading");
-    firstPasswordDi.style.display = "none";
-    secondPasswordDi.style.display = "none";
+    onepassword.style.display = "none";
+    twopassword.style.display = "none";
     textHeading[0].style.display = "none";
     textHeading[1].style.display = "none";
     textHeading[2].style.display = "none";
